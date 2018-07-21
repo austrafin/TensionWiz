@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExportOutputSettings</class>
+ <widget class="QDialog" name="ExportOutputSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>324</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>359</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0" colspan="3">
+    <widget class="QComboBox" name="filetypeCB">
+     <item>
+      <property name="text">
+       <string>PDF - Portable Document Format</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>XLSX - Microsoft Excel Worksheet</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>XLS - Microsoft Excel 97-2003 Worksheet</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Include</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="allCB">
+        <property name="text">
+         <string>All</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="stringingChartCB">
+        <property name="text">
+         <string>Stringing Chart</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="noWindCB">
+        <property name="text">
+         <string>No Wind</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="initWindCB">
+        <property name="text">
+         <string>Initial Wind</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="T500CB">
+        <property name="text">
+         <string>T°C+500w</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="sagsNoWindCB">
+        <property name="text">
+         <string>Sags No Wind</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="sagsInitWindCB">
+        <property name="text">
+         <string>Sags Initial Wind</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QCheckBox" name="sagsT500CB">
+        <property name="text">
+         <string>Sags + 500w</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QCheckBox" name="swingsInitWindCB">
+        <property name="text">
+         <string>Swings Initial Wind</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QCheckBox" name="swingsT500CB">
+        <property name="text">
+         <string>Swings + 500w</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="highlightColourCB">
+        <property name="text">
+         <string>Highlight colour</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="backgroundColourCB">
+        <property name="text">
+         <string>Background colour</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>204</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="okCancelPB">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>156</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>167</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>filetypeCB</tabstop>
+  <tabstop>okCancelPB</tabstop>
+  <tabstop>allCB</tabstop>
+  <tabstop>stringingChartCB</tabstop>
+  <tabstop>noWindCB</tabstop>
+  <tabstop>initWindCB</tabstop>
+  <tabstop>T500CB</tabstop>
+  <tabstop>sagsNoWindCB</tabstop>
+  <tabstop>sagsInitWindCB</tabstop>
+  <tabstop>sagsT500CB</tabstop>
+  <tabstop>swingsInitWindCB</tabstop>
+  <tabstop>swingsT500CB</tabstop>
+  <tabstop>backgroundColourCB</tabstop>
+  <tabstop>highlightColourCB</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

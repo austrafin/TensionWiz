@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SheetNewWindow</class>
+ <widget class="QDialog" name="SheetNewWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>888</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="printPB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Print</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportPDFPB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Export PDF</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportSpreadsheetPB">
+       <property name="minimumSize">
+        <size>
+         <width>107</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Export Spreadsheet</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>398</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearSelectionPB">
+       <property name="text">
+        <string>Clear Selection</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="highlightPB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Highlight</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="unhighlightPB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Unhighlight</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="unhighlightAllPB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Unhighlight All</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Initial Conditions</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QTabWidget" name="resultsTabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_stringingChart">
+        <attribute name="title">
+         <string>Stringing Chart</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_9"/>
+       </widget>
+       <widget class="QWidget" name="tab_finalCondNoWind">
+        <attribute name="title">
+         <string>No Wind</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_6"/>
+       </widget>
+       <widget class="QWidget" name="tab_finalCondInitWind">
+        <attribute name="title">
+         <string>Initial Wind</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout"/>
+       </widget>
+       <widget class="QWidget" name="tab_finalCondT500">
+        <attribute name="title">
+         <string>T°C+500w</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_7"/>
+       </widget>
+       <widget class="QWidget" name="tab_sagsNoWind">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_5"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_sagsInitWind">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_10"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_sagsT500Wind">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_12"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_swingsInitWind">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_15">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_14"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_swingsT500Wind">
+        <attribute name="title">
+         <string>Page</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_17">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_16"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Final Conditions</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="Line" name="line_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QTableWidget" name="initialCondTW">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>56</height>
+        </size>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>130</number>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>27</number>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Conductor</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total Length (m)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ruling Span (m)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tension (N)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Temperature (°C)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Wind (Pa)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Actual Span (m)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Settling In (%)</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>resultsTabWidget</tabstop>
+  <tabstop>printPB</tabstop>
+  <tabstop>exportPDFPB</tabstop>
+  <tabstop>exportSpreadsheetPB</tabstop>
+  <tabstop>clearSelectionPB</tabstop>
+  <tabstop>highlightPB</tabstop>
+  <tabstop>unhighlightPB</tabstop>
+  <tabstop>unhighlightAllPB</tabstop>
+  <tabstop>initialCondTW</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
